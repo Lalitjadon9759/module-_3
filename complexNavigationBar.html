@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.navbar a {
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.section-a a {
+  color: #1e90ff; 
+}
+.section-b a {
+  color: #32cd32; 
+}
+.section-c a {
+  color: #ff8c00;
+}
+
+.section-a > a {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.section-b > a {
+  font-weight: bold;
+  font-style: italic;
+}
+.section-c > a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  background-color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.navbar a:active {
+  background-color: #ddd;
+  color: #000;
+}
+
+
+.navbar a[href^="https"] {
+  color: #e6007e !important; 
+  border-bottom: 2px solid #e6007e;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+  <div class="section section-a">
+    <h3>Section A</h3>
+    <a href="https://example.com">Home</a>
+    <a href="/about">About</a>
+    <div>
+      <a href="/team">Team</a>
+    </div>
+  </div>
+
+  <div class="section section-b">
+    <h3>Section B</h3>
+    <a href="/services">Services</a>
+    <a href="https://services.com">Premium</a>
+    <div>
+      <a href="/consulting">Consulting</a>
+    </div>
+  </div>
+
+  <div class="section section-c">
+    <h3>Section C</h3>
+    <a href="/contact">Contact</a>
+    <a href="https://contact.com">Support</a>
+    <div>
+      <a href="/careers">Careers</a>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>
